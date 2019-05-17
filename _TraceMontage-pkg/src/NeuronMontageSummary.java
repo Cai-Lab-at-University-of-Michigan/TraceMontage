@@ -13,13 +13,14 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.util.ArrayList;
+import java.util.List;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.SwingUtilities;
 
 public class NeuronMontageSummary extends javax.swing.JFrame {
 
-    public NeuronMontageSummary(java.io.File filedataMontage, ArrayList<String[]> matchedOverlappedTraceAnalysis, ArrayList<String[]> tracedataNeuronBranch1, ArrayList<String[]> tracedataNeuronBranch2) {
+    public NeuronMontageSummary(java.io.File filedataMontage, List<String[]> matchedOverlappedTraceAnalysis, List<String[]> tracedataNeuronBranch1, List<String[]> tracedataNeuronBranch2) {
 
         String[] columnNeuronMontageSummary = {"Data-set #1 Branch", "Data-set #1 Type", "Data-set #2 Branch", "Data-set #2 Type", "Number of Overlapped Points of Two Branches", "Overlapped Length / Data-set #1 Branch Length", "Overlapped Length / Data-set #2 Branch Length", "Relative Difference of Intensities among Pair of Channels", "Montaged Data-set Branch"};
         String[][] dataNeuronMontageSummary = new String[matchedOverlappedTraceAnalysis.size()][9];
@@ -116,8 +117,7 @@ public class NeuronMontageSummary extends javax.swing.JFrame {
 
             tableNeuronMontageSummaryBW.newLine();
             tableNeuronMontageSummaryBW.newLine();
-            tableNeuronMontageSummaryBW.write("Ratio of merged branches to all branches in data-set #1 :");
-            tableNeuronMontageSummaryBW.write("\t");
+            tableNeuronMontageSummaryBW.write("Ratio of merged branches to all branches in data-set #1 :\n\t");
             tableNeuronMontageSummaryBW.write(String.format("%.2f", ((double) tableNeuronMontageSummary.getRowCount()) / ((double) tracedataNeuronBranch1.size())));
             tableNeuronMontageSummaryBW.write("\t");
             tableNeuronMontageSummaryBW.write("Ratio of merged branches to all branches in data-set #2 :");
@@ -182,28 +182,24 @@ public class NeuronMontageSummary extends javax.swing.JFrame {
     }
 
     private double getMean(double[] data) {
-
-        int dataSize = data.length;
         double sum = 0.0;
         
-        for (int i = 0; i < dataSize; i++) {
+        for (int i = 0; i < data.length; i++) {
             sum += data[i];
         }
             
-        return sum / dataSize;
+        return sum / data.length;
     }
     
     private double getStandardError(double[] data) {
-
         double mean = getMean(data);
-        int dataSize = data.length;
-        double sum = 0.0;
+        double sum = 0.0, t = 0;
         
-        for (double a:data) {
-            sum += (a - mean) * (a - mean);
+        for (int i = 0; i < data.length; i++) { // (double a : data) {
+            t = data[i] - mean;
+            sum += t*t;
         }
 
-        return Math.sqrt(sum) / dataSize;
+        return Math.sqrt(sum) / data.length;
     }
-
 }

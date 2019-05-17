@@ -12,21 +12,22 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class FindOverlappedTraceOtherMethods {
     
-    private ArrayList<String[]> matchedOverlappedTraceBranch = new ArrayList<String[]>();
-    private ArrayList<String[]> matchedOverlappedTraceAnalysis = new ArrayList<String[]>();
-    private ArrayList<Integer[][]> matchedOverlappedTraceCoordinate = new ArrayList<Integer[][]>();
+    private List<String[]> matchedOverlappedTraceBranch = new ArrayList<>();
+    private List<String[]> matchedOverlappedTraceAnalysis = new ArrayList<>();
+    private List<Integer[][]> matchedOverlappedTraceCoordinate = new ArrayList<>();
 
-    private ArrayList<Integer[][]> tracedataNeuronCoordinateModified1 = new ArrayList<Integer[][]>();
-    private ArrayList<String[]> tracedataNeuronTypeModified1 = new ArrayList<String[]>();
-    private ArrayList<Integer[]> tracedataNeuronRadiusModified1 = new ArrayList<Integer[]>();
-    private ArrayList<Integer[]> tracedataNeuronSynapseModified1 = new ArrayList<Integer[]>();
-    private ArrayList<String[]> tracedataNeuronConnectionModified1 = new ArrayList<String[]>();
+    private List<Integer[][]> tracedataNeuronCoordinateModified1 = new ArrayList<>();
+    private List<String[]> tracedataNeuronTypeModified1 = new ArrayList<>();
+    private List<Integer[]> tracedataNeuronRadiusModified1 = new ArrayList<>();
+    private List<Integer[]> tracedataNeuronSynapseModified1 = new ArrayList<>();
+    private List<String[]> tracedataNeuronConnectionModified1 = new ArrayList<>();
 
-    public FindOverlappedTraceOtherMethods(Integer montageMethodFlag, ArrayList<String[]> tracedataNeuronBranch1, ArrayList<Double[]> tracedataNeuronColor1, ArrayList<Integer[][]> tracedataNeuronCoordinate1, ArrayList<String[]> tracedataNeuronType1, ArrayList<Integer[]> tracedataNeuronRadius1, ArrayList<Integer[]> tracedataNeuronSynapse1, ArrayList<String[]> tracedataNeuronConnection1, ArrayList<String[]> tracedataNeuronBranch2, ArrayList<Double[]> tracedataNeuronColor2, ArrayList<Integer[][]> tracedataNeuronCoordinate2, ArrayList<String[]> tracedataNeuronType2, ArrayList<Integer[]> tracedataNeuronRadius2, ArrayList<Integer[]> tracedataNeuronSynapse2, ArrayList<String[]> tracedataNeuronConnection2, Double colorToleranceValue, Integer positionTolerancePixelValue, Integer positionTolerancePointValue, Double positionToleranceRatioValue) {
+    public FindOverlappedTraceOtherMethods(Integer montageMethodFlag, List<String[]> tracedataNeuronBranch1, List<Double[]> tracedataNeuronColor1, List<Integer[][]> tracedataNeuronCoordinate1, List<String[]> tracedataNeuronType1, List<Integer[]> tracedataNeuronRadius1, List<Integer[]> tracedataNeuronSynapse1, List<String[]> tracedataNeuronConnection1, List<String[]> tracedataNeuronBranch2, List<Double[]> tracedataNeuronColor2, List<Integer[][]> tracedataNeuronCoordinate2, List<String[]> tracedataNeuronType2, List<Integer[]> tracedataNeuronRadius2, List<Integer[]> tracedataNeuronSynapse2, List<String[]> tracedataNeuronConnection2, Double colorToleranceValue, Integer positionTolerancePixelValue, Integer positionTolerancePointValue, Double positionToleranceRatioValue) {
 
         ArrayList<String[]> tracedataNeuronBranchSelected1 = new ArrayList<String[]>();
         ArrayList<String[]> tracedataNeuronBranchSelected2 = new ArrayList<String[]>();
@@ -447,35 +448,35 @@ public class FindOverlappedTraceOtherMethods {
         System.out.println("Size of tracedataNeuronCoordinate2: " + tracedataNeuronCoordinate2.size());
     }
 
-    public ArrayList<String[]> getMatchedOverlappedTraceBranch() {
+    public List<String[]> getMatchedOverlappedTraceBranch() {
         return matchedOverlappedTraceBranch;
     }
 
-    public ArrayList<String[]> getMatchedOverlappedTraceAnalysis() {
+    public List<String[]> getMatchedOverlappedTraceAnalysis() {
         return matchedOverlappedTraceAnalysis;
     }
 
-    public ArrayList<Integer[][]> getMatchedOverlappedTraceCoordinate() {
+    public List<Integer[][]> getMatchedOverlappedTraceCoordinate() {
         return matchedOverlappedTraceCoordinate;
     }
 
-    public ArrayList<Integer[][]> getTracedataNeuronCoordinateModified1() {
+    public List<Integer[][]> getTracedataNeuronCoordinateModified1() {
         return tracedataNeuronCoordinateModified1;
     }
 
-    public ArrayList<String[]> getTracedataNeuronTypeModified1() {
+    public List<String[]> getTracedataNeuronTypeModified1() {
         return tracedataNeuronTypeModified1;
     }
 
-    public ArrayList<Integer[]> getTracedataNeuronRadiusModified1() {
+    public List<Integer[]> getTracedataNeuronRadiusModified1() {
         return tracedataNeuronRadiusModified1;
     }
 
-    public ArrayList<Integer[]> getTracedataNeuronSynapseModified1() {
+    public List<Integer[]> getTracedataNeuronSynapseModified1() {
         return tracedataNeuronSynapseModified1;
     }
 
-    public ArrayList<String[]> getTracedataNeuronConnectionModified1() {
+    public List<String[]> getTracedataNeuronConnectionModified1() {
         return tracedataNeuronConnectionModified1;
     }
 

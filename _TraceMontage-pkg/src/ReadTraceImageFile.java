@@ -13,15 +13,16 @@ import ij.ImagePlus;
 import ij.ImageStack;
 import ij.process.ImageProcessor;
 import java.util.ArrayList;
+import java.util.List;
 
 public class ReadTraceImageFile {
 
-    private ArrayList<Double[]> tracedataNeuronColor = new ArrayList<Double[]>();
-    private Integer imageSizeWidth;
-    private Integer imageSizeHeight;
+    private ArrayList<Double[]> tracedataNeuronColor = new ArrayList<>();
+    private int imageSizeWidth;
+    private int imageSizeHeight;
     private boolean traceimageFlag;
 
-    public ReadTraceImageFile(ImagePlus image, ArrayList<String[]> tracedataNeuronBranch, ArrayList<Integer[][]> tracedataNeuronCoordinate) {
+    public ReadTraceImageFile(ImagePlus image, List<String[]> tracedataNeuronBranch, List<Integer[][]> tracedataNeuronCoordinate) {
 
         try {
             int[] imageDimension = image.getDimensions();

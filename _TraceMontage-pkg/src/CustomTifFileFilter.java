@@ -1,7 +1,7 @@
 /* COPYRIGHT Creative Commons Attribution-Non Commercial 4.0 International (CC BY-NC 4.0) */
 
 /**
- * A custom tif FileFilter for FileChooser.
+ * A custom TIFF FileFilter for FileChooser.
  *
  * @author Aslan Satary Dizaji <asataryd@umich.edu>
  * <https://sites.google.com/a/umich.edu/aslansdizaji>
@@ -15,12 +15,14 @@ public class CustomTifFileFilter extends javax.swing.filechooser.FileFilter {
 
     @Override
     public boolean accept(File file) {
-        return file.isDirectory() || file.getAbsolutePath().endsWith(".tif");
+        return file.isDirectory() ||
+                file.getAbsolutePath().endsWith(".tif") || 
+                file.getAbsolutePath().endsWith(".tiff");
     }
 
     @Override
     public String getDescription() {
-        return "Tif Images (*.tif)";
+        return "TIFF Images (*.tif)";
     }
 
 }

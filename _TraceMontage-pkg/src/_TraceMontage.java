@@ -15,6 +15,7 @@ import ij.io.Opener;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.UIManager;
@@ -42,39 +43,40 @@ public class _TraceMontage extends javax.swing.JFrame {
     private Integer imageSizeHeight1;
     private Integer imageSizeHeight2;
         
-    private ArrayList<String[]> tracedataNeuronTag1 = new ArrayList<String[]>();
-    private ArrayList<String[]> tracedataNeuronTag2 = new ArrayList<String[]>();
-    private ArrayList<String[]> tracedataNeuronBranch1 = new ArrayList<String[]>();
-    private ArrayList<String[]> tracedataNeuronBranch2 = new ArrayList<String[]>();
-    private ArrayList<Double[]> tracedataNeuronColor1 = new ArrayList<Double[]>();
-    private ArrayList<Double[]> tracedataNeuronColor2 = new ArrayList<Double[]>();
-    private ArrayList<Integer[][]> tracedataNeuronCoordinate1 = new ArrayList<Integer[][]>();
-    private ArrayList<Integer[][]> tracedataNeuronCoordinateModified1 = new ArrayList<Integer[][]>();
-    private ArrayList<Integer[][]> tracedataNeuronCoordinate2 = new ArrayList<Integer[][]>();
-    private ArrayList<Integer[][]> tracedataNeuronCoordinateModified2 = new ArrayList<Integer[][]>();
-    private ArrayList<String[]> tracedataNeuronType1 = new ArrayList<String[]>();
-    private ArrayList<String[]> tracedataNeuronTypeModified1 = new ArrayList<String[]>();
-    private ArrayList<String[]> tracedataNeuronType2 = new ArrayList<String[]>();
-    private ArrayList<Integer[]> tracedataNeuronRadius1 = new ArrayList<Integer[]>();
-    private ArrayList<Integer[]> tracedataNeuronRadiusModified1 = new ArrayList<Integer[]>();
-    private ArrayList<Integer[]> tracedataNeuronRadius2 = new ArrayList<Integer[]>();
-    private ArrayList<Integer[]> tracedataNeuronSynapse1 = new ArrayList<Integer[]>();
-    private ArrayList<Integer[]> tracedataNeuronSynapseModified1 = new ArrayList<Integer[]>();
-    private ArrayList<Integer[]> tracedataNeuronSynapse2 = new ArrayList<Integer[]>();
-    private ArrayList<String[]> tracedataNeuronConnection1 = new ArrayList<String[]>();
-    private ArrayList<String[]> tracedataNeuronConnectionModified1 = new ArrayList<String[]>();
-    private ArrayList<String[]> tracedataNeuronConnection2 = new ArrayList<String[]>();
+    private List<String[]> tracedataNeuronTag1 = new ArrayList<>();
+    private List<String[]> tracedataNeuronTag2 = new ArrayList<>();
+    private List<String[]> tracedataNeuronBranch1 = new ArrayList<>();
+    private List<String[]> tracedataNeuronBranch2 = new ArrayList<>();
+    private List<Double[]> tracedataNeuronColor1 = new ArrayList<>();
+    private List<Double[]> tracedataNeuronColor2 = new ArrayList<>();
     
-    private ArrayList<String[]> tracedataMontageNeuronTag = new ArrayList<String[]>();
-    private ArrayList<String[]> tracedataMontageNeuronBranch = new ArrayList<String[]>();
-    private ArrayList<Integer[][]> tracedataMontageNeuronCoordinate = new ArrayList<Integer[][]>();
-    private ArrayList<String[]> tracedataMontageNeuronType = new ArrayList<String[]>();
-    private ArrayList<Integer[]> tracedataMontageNeuronRadius = new ArrayList<Integer[]>();
-    private ArrayList<Integer[]> tracedataMontageNeuronSynapse = new ArrayList<Integer[]>();
-    private ArrayList<String[]> tracedataMontageNeuronConnection = new ArrayList<String[]>();
+    private List<Integer[][]> tracedataNeuronCoordinate1 = new ArrayList<>();
+    private List<Integer[][]> tracedataNeuronCoordinateModified1 = new ArrayList<>();
+    private List<Integer[][]> tracedataNeuronCoordinate2 = new ArrayList<>();
+    private List<Integer[][]> tracedataNeuronCoordinateModified2 = new ArrayList<>();
+    private List<String[]> tracedataNeuronType1 = new ArrayList<>();
+    private List<String[]> tracedataNeuronTypeModified1 = new ArrayList<>();
+    private List<String[]> tracedataNeuronType2 = new ArrayList<>();
+    private List<Integer[]> tracedataNeuronRadius1 = new ArrayList<>();
+    private List<Integer[]> tracedataNeuronRadiusModified1 = new ArrayList<>();
+    private List<Integer[]> tracedataNeuronRadius2 = new ArrayList<>();
+    private List<Integer[]> tracedataNeuronSynapse1 = new ArrayList<>();
+    private List<Integer[]> tracedataNeuronSynapseModified1 = new ArrayList<>();
+    private List<Integer[]> tracedataNeuronSynapse2 = new ArrayList<>();
+    private List<String[]> tracedataNeuronConnection1 = new ArrayList<>();
+    private List<String[]> tracedataNeuronConnectionModified1 = new ArrayList<>();
+    private List<String[]> tracedataNeuronConnection2 = new ArrayList<>();
+    
+    private List<String[]> tracedataMontageNeuronTag = new ArrayList<>();
+    private List<String[]> tracedataMontageNeuronBranch = new ArrayList<>();
+    private List<Integer[][]> tracedataMontageNeuronCoordinate = new ArrayList<>();
+    private List<String[]> tracedataMontageNeuronType = new ArrayList<>();
+    private List<Integer[]> tracedataMontageNeuronRadius = new ArrayList<>();
+    private List<Integer[]> tracedataMontageNeuronSynapse = new ArrayList<>();
+    private List<String[]> tracedataMontageNeuronConnection = new ArrayList<>();
 
-    private ArrayList<String[]> matchedOverlappedTraceBranch = new ArrayList<String[]>();
-    private ArrayList<String[]> matchedOverlappedTraceAnalysis = new ArrayList<String[]>();
+    private List<String[]> matchedOverlappedTraceBranch = new ArrayList<>();
+    private List<String[]> matchedOverlappedTraceAnalysis = new ArrayList<>();
 
     /** Creates new form _TraceMontage */
     public _TraceMontage() {

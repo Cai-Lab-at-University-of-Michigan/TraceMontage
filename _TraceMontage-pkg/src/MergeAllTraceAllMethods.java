@@ -12,6 +12,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class MergeAllTraceAllMethods {
@@ -26,7 +27,7 @@ public class MergeAllTraceAllMethods {
     
     private ArrayList<String[]> matchedOverlappedTraceAnalysisModified = new ArrayList<String[]>();
 
-    public MergeAllTraceAllMethods(Integer montageMethodFlag, ArrayList<String[]> matchedOverlappedTraceBranch, ArrayList<String[]> matchedOverlappedTraceAnalysis, ArrayList<String[]> tracedataNeuronTag1, ArrayList<String[]> tracedataNeuronBranch1, ArrayList<Integer[][]> tracedataNeuronCoordinateModified1, ArrayList<String[]> tracedataNeuronTypeModified1, ArrayList<Integer[]> tracedataNeuronRadiusModified1, ArrayList<Integer[]> tracedataNeuronSynapseModified1, ArrayList<String[]> tracedataNeuronConnectionModified1, ArrayList<String[]> tracedataNeuronTag2, ArrayList<String[]> tracedataNeuronBranch2, ArrayList<Integer[][]> tracedataNeuronCoordinate2, ArrayList<String[]> tracedataNeuronType2, ArrayList<Integer[]> tracedataNeuronRadius2, ArrayList<Integer[]> tracedataNeuronSynapse2, ArrayList<String[]> tracedataNeuronConnection2) {
+    public MergeAllTraceAllMethods(Integer montageMethodFlag, List<String[]> matchedOverlappedTraceBranch, List<String[]> matchedOverlappedTraceAnalysis, List<String[]> tracedataNeuronTag1, List<String[]> tracedataNeuronBranch1, List<Integer[][]> tracedataNeuronCoordinateModified1, List<String[]> tracedataNeuronTypeModified1, List<Integer[]> tracedataNeuronRadiusModified1, List<Integer[]> tracedataNeuronSynapseModified1, List<String[]> tracedataNeuronConnectionModified1, List<String[]> tracedataNeuronTag2, List<String[]> tracedataNeuronBranch2, List<Integer[][]> tracedataNeuronCoordinate2, List<String[]> tracedataNeuronType2, List<Integer[]> tracedataNeuronRadius2, List<Integer[]> tracedataNeuronSynapse2, List<String[]> tracedataNeuronConnection2) {
 
         if (montageMethodFlag == 1 || montageMethodFlag == 2) {
 

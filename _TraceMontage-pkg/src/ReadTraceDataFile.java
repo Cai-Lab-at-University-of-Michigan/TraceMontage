@@ -18,6 +18,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Enumeration;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.zip.ZipEntry;
@@ -29,13 +30,13 @@ public class ReadTraceDataFile {
     private String tracedataHeader;
     private Double[] imageResolution = new Double[3];
     
-    private ArrayList<String[]> tracedataNeuronTag = new ArrayList<String[]>();
-    private ArrayList<String[]> tracedataNeuronBranch = new ArrayList<String[]>();
-    private ArrayList<Integer[][]> tracedataNeuronCoordinate = new ArrayList<Integer[][]>();
-    private ArrayList<String[]> tracedataNeuronType = new ArrayList<String[]>();
-    private ArrayList<Integer[]> tracedataNeuronRadius = new ArrayList<Integer[]>();
-    private ArrayList<Integer[]> tracedataNeuronSynapse = new ArrayList<Integer[]>();
-    private ArrayList<String[]> tracedataNeuronConnection = new ArrayList<String[]>();
+    private ArrayList<String[]> tracedataNeuronTag = new ArrayList<>();
+    private ArrayList<String[]> tracedataNeuronBranch = new ArrayList<>();
+    private ArrayList<Integer[][]> tracedataNeuronCoordinate = new ArrayList<>();
+    private ArrayList<String[]> tracedataNeuronType = new ArrayList<>();
+    private ArrayList<Integer[]> tracedataNeuronRadius = new ArrayList<>();
+    private ArrayList<Integer[]> tracedataNeuronSynapse = new ArrayList<>();
+    private ArrayList<String[]> tracedataNeuronConnection = new ArrayList<>();
 
     private boolean tracedataFlag;
 
@@ -144,11 +145,11 @@ public class ReadTraceDataFile {
                                             
                                             Matcher matcherNeuronCoordinateTemplate = patternNeuronCoordinateTemplate.matcher(tracedataLine2);
 
-                                            ArrayList<Integer[]> tracedataNeuronCoordinateTemp1 = new ArrayList<Integer[]>();
-                                            ArrayList<String> tracedataNeuronTypeTemp1 = new ArrayList<String>();
-                                            ArrayList<Integer> tracedataNeuronRadiusTemp1 = new ArrayList<Integer>();
-                                            ArrayList<Integer> tracedataNeuronSynapseTemp1 = new ArrayList<Integer>();
-                                            ArrayList<String> tracedataNeuronConnectionTemp1 = new ArrayList<String>();
+                                            List<Integer[]> tracedataNeuronCoordinateTemp1 = new ArrayList<>();
+                                            List<String> tracedataNeuronTypeTemp1 = new ArrayList<>();
+                                            List<Integer> tracedataNeuronRadiusTemp1 = new ArrayList<>();
+                                            List<Integer> tracedataNeuronSynapseTemp1 = new ArrayList<>();
+                                            List<String> tracedataNeuronConnectionTemp1 = new ArrayList<>();
 
                                             while (matcherNeuronCoordinateTemplate.find()) {
 
@@ -304,11 +305,11 @@ public class ReadTraceDataFile {
 
                                                 Matcher matcherNeuronCoordinateTemplate = patternNeuronCoordinateTemplate.matcher(tracedataLine2);
 
-                                                ArrayList<Integer[]> tracedataNeuronCoordinateTemp1 = new ArrayList<Integer[]>();
-                                                ArrayList<String> tracedataNeuronTypeTemp1 = new ArrayList<String>();
-                                                ArrayList<Integer> tracedataNeuronRadiusTemp1 = new ArrayList<Integer>();
-                                                ArrayList<Integer> tracedataNeuronSynapseTemp1 = new ArrayList<Integer>();
-                                                ArrayList<String> tracedataNeuronConnectionTemp1 = new ArrayList<String>();
+                                                List<Integer[]> tracedataNeuronCoordinateTemp1 = new ArrayList<>();
+                                                List<String> tracedataNeuronTypeTemp1 = new ArrayList<>();
+                                                List<Integer> tracedataNeuronRadiusTemp1 = new ArrayList<>();
+                                                List<Integer> tracedataNeuronSynapseTemp1 = new ArrayList<>();
+                                                List<String> tracedataNeuronConnectionTemp1 = new ArrayList<>();
 
                                                 while (matcherNeuronCoordinateTemplate.find()) {
 
@@ -366,11 +367,11 @@ public class ReadTraceDataFile {
 
                                                 Matcher matcherNeuronCoordinateTemplate = patternNeuronCoordinateTemplate.matcher(tracedataLine2);
 
-                                                ArrayList<Integer[]> tracedataNeuronCoordinateTemp1 = new ArrayList<Integer[]>();
-                                                ArrayList<String> tracedataNeuronTypeTemp1 = new ArrayList<String>();
-                                                ArrayList<Integer> tracedataNeuronRadiusTemp1 = new ArrayList<Integer>();
-                                                ArrayList<Integer> tracedataNeuronSynapseTemp1 = new ArrayList<Integer>();
-                                                ArrayList<String> tracedataNeuronConnectionTemp1 = new ArrayList<String>();
+                                                List<Integer[]> tracedataNeuronCoordinateTemp1 = new ArrayList<>();
+                                                List<String> tracedataNeuronTypeTemp1 = new ArrayList<>();
+                                                List<Integer> tracedataNeuronRadiusTemp1 = new ArrayList<>();
+                                                List<Integer> tracedataNeuronSynapseTemp1 = new ArrayList<>();
+                                                List<String> tracedataNeuronConnectionTemp1 = new ArrayList<>();
 
                                                 while (matcherNeuronCoordinateTemplate.find()) {
 
@@ -503,11 +504,11 @@ public class ReadTraceDataFile {
                         String[] tracedataNeuronBranchTemp = new String[3];
                         String[] neuronBranchPointMapTemp = new String[4];
 
-                        ArrayList<Integer[]> tracedataNeuronCoordinateTemp1 = new ArrayList<Integer[]>();
-                        ArrayList<String> tracedataNeuronTypeTemp1 = new ArrayList<String>();
-                        ArrayList<Integer> tracedataNeuronRadiusTemp1 = new ArrayList<Integer>();
-                        ArrayList<Integer> tracedataNeuronSynapseTemp1 = new ArrayList<Integer>();
-                        ArrayList<String> tracedataNeuronConnectionTemp1 = new ArrayList<String>();
+                        List<Integer[]> tracedataNeuronCoordinateTemp1 = new ArrayList<>();
+                        List<String> tracedataNeuronTypeTemp1 = new ArrayList<>();
+                        List<Integer> tracedataNeuronRadiusTemp1 = new ArrayList<>();
+                        List<Integer> tracedataNeuronSynapseTemp1 = new ArrayList<>();
+                        List<String> tracedataNeuronConnectionTemp1 = new ArrayList<>();
 
                         boolean flagInnerLoop = true;
 
@@ -547,16 +548,22 @@ public class ReadTraceDataFile {
                                        matcherNeuronPointStandardType == 4 ||
                                        matcherNeuronPointStandardType == 7) {
 
-                                if (matcherNeuronPointStandardType == 0) {
-                                    branchType = "Neurite";
-                                } else if (matcherNeuronPointStandardType == 2) {
-                                    branchType = "Axon";
-                                } else if (matcherNeuronPointStandardType == 3) {
-                                    branchType = "Dendrite";
-                                } else if (matcherNeuronPointStandardType == 4) {
-                                    branchType = "Apical";
-                                } else if (matcherNeuronPointStandardType == 7) {
-                                    branchType = "Spine";
+                                switch (matcherNeuronPointStandardType) {
+                                    case 0:
+                                        branchType = "Neurite";
+                                        break;
+                                    case 2:
+                                        branchType = "Axon";
+                                        break;
+                                    case 3:
+                                        branchType = "Dendrite";
+                                        break;
+                                    case 4:
+                                        branchType = "Apical";
+                                        break;
+                                    case 7:
+                                        branchType = "Spine";
+                                        break;
                                 }
 
                                 if (matcherNeuronPointStandardType != branchTypeOld) {
@@ -731,11 +738,11 @@ public class ReadTraceDataFile {
                         String[] tracedataNeuronBranchTemp = new String[3];
                         String[] neuronBranchPointMapTemp = new String[4];
 
-                        ArrayList<Integer[]> tracedataNeuronCoordinateTemp1 = new ArrayList<Integer[]>();
-                        ArrayList<String> tracedataNeuronTypeTemp1 = new ArrayList<String>();
-                        ArrayList<Integer> tracedataNeuronRadiusTemp1 = new ArrayList<Integer>();
-                        ArrayList<Integer> tracedataNeuronSynapseTemp1 = new ArrayList<Integer>();
-                        ArrayList<String> tracedataNeuronConnectionTemp1 = new ArrayList<String>();
+                        ArrayList<Integer[]> tracedataNeuronCoordinateTemp1 = new ArrayList<>();
+                        ArrayList<String> tracedataNeuronTypeTemp1 = new ArrayList<>();
+                        ArrayList<Integer> tracedataNeuronRadiusTemp1 = new ArrayList<>();
+                        ArrayList<Integer> tracedataNeuronSynapseTemp1 = new ArrayList<>();
+                        ArrayList<String> tracedataNeuronConnectionTemp1 = new ArrayList<>();
 
                         boolean flagInnerLoop = true;
 
@@ -775,16 +782,22 @@ public class ReadTraceDataFile {
                                        matcherNeuronPointExtendedType == 4 ||
                                        matcherNeuronPointExtendedType == 7) {
 
-                                if (matcherNeuronPointExtendedType == 0) {
-                                    branchType = "Neurite";
-                                } else if (matcherNeuronPointExtendedType == 2) {
-                                    branchType = "Axon";
-                                } else if (matcherNeuronPointExtendedType == 3) {
-                                    branchType = "Dendrite";
-                                } else if (matcherNeuronPointExtendedType == 4) {
-                                    branchType = "Apical";
-                                } else if (matcherNeuronPointExtendedType == 7) {
-                                    branchType = "Spine";
+                                switch (matcherNeuronPointExtendedType) {
+                                    case 0:
+                                        branchType = "Neurite";
+                                        break;
+                                    case 2:
+                                        branchType = "Axon";
+                                        break;
+                                    case 3:
+                                        branchType = "Dendrite";
+                                        break;
+                                    case 4:
+                                        branchType = "Apical";
+                                        break;
+                                    case 7:
+                                        branchType = "Spine";
+                                        break;
                                 }
 
                                 if (matcherNeuronPointExtendedType != branchTypeOld) {
@@ -1023,31 +1036,31 @@ public class ReadTraceDataFile {
         return imageResolution;
     }
 
-    public ArrayList<String[]> getTracedataNeuronTag() {
+    public List<String[]> getTracedataNeuronTag() {
         return tracedataNeuronTag;
     }
 
-    public ArrayList<String[]> getTracedataNeuronBranch() {
+    public List<String[]> getTracedataNeuronBranch() {
         return tracedataNeuronBranch;
     }
 
-    public ArrayList<Integer[][]> getTracedataNeuronCoordinate() {
+    public List<Integer[][]> getTracedataNeuronCoordinate() {
         return tracedataNeuronCoordinate;
     }
 
-    public ArrayList<String[]> getTracedataNeuronType() {
+    public List<String[]> getTracedataNeuronType() {
         return tracedataNeuronType;
     }
 
-    public ArrayList<Integer[]> getTracedataNeuronRadius() {
+    public List<Integer[]> getTracedataNeuronRadius() {
         return tracedataNeuronRadius;
     }
 
-    public ArrayList<Integer[]> getTracedataNeuronSynapse() {
+    public List<Integer[]> getTracedataNeuronSynapse() {
         return tracedataNeuronSynapse;
     }
 
-    public ArrayList<String[]> getTracedataNeuronConnection() {
+    public List<String[]> getTracedataNeuronConnection() {
         return tracedataNeuronConnection;
     }
 

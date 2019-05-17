@@ -15,7 +15,9 @@ public class CustomZipSWCFileFilter extends javax.swing.filechooser.FileFilter {
 
     @Override
     public boolean accept(File file) {
-        return file.isDirectory() || file.getAbsolutePath().endsWith(".zip") || file.getAbsolutePath().endsWith(".swc");
+        return file.isDirectory() ||
+                file.getAbsolutePath().endsWith(".zip") ||
+                file.getAbsolutePath().endsWith(".swc");
     }
 
     @Override

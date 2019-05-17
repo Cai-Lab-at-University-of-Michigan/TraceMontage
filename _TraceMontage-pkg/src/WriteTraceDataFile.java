@@ -20,12 +20,24 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
 public class WriteTraceDataFile {
 
-    public WriteTraceDataFile(File filedataMontage, Integer tracedataFileTypeFlag, String tracedataMontageStatus, String tracedataMontageHeader, Double[] imageMontageResolution, ArrayList<String[]> tracedataMontageNeuronTag, ArrayList<String[]> tracedataMontageNeuronBranch, ArrayList<Integer[][]> tracedataMontageNeuronCoordinate, ArrayList<String[]> tracedataMontageNeuronType, ArrayList<Integer[]> tracedataMontageNeuronRadius, ArrayList<Integer[]> tracedataMontageNeuronSynapse, ArrayList<String[]> tracedataMontageNeuronConnection) throws IOException {
+    public WriteTraceDataFile(File filedataMontage,
+            Integer tracedataFileTypeFlag,
+            String tracedataMontageStatus,
+            String tracedataMontageHeader,
+            Double[] imageMontageResolution,
+            List<String[]> tracedataMontageNeuronTag,
+            List<String[]> tracedataMontageNeuronBranch,
+            List<Integer[][]> tracedataMontageNeuronCoordinate,
+            List<String[]> tracedataMontageNeuronType,
+            List<Integer[]> tracedataMontageNeuronRadius,
+            List<Integer[]> tracedataMontageNeuronSynapse,
+            List<String[]> tracedataMontageNeuronConnection) throws IOException {
 
         if (tracedataFileTypeFlag == 1) {
 

@@ -12,6 +12,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class FindOverlappedTraceFirstMethod {
@@ -27,7 +28,7 @@ public class FindOverlappedTraceFirstMethod {
     private ArrayList<Integer[]> tracedataNeuronSynapseModified1 = new ArrayList<Integer[]>();
     private ArrayList<String[]> tracedataNeuronConnectionModified1 = new ArrayList<String[]>();
 
-    public FindOverlappedTraceFirstMethod(ArrayList<String[]> tracedataNeuronBranch1, ArrayList<Double[]> tracedataNeuronColor1, ArrayList<Integer[][]> tracedataNeuronCoordinate1, ArrayList<String[]> tracedataNeuronType1, ArrayList<Integer[]> tracedataNeuronRadius1, ArrayList<Integer[]> tracedataNeuronSynapse1, ArrayList<String[]> tracedataNeuronConnection1, ArrayList<String[]> tracedataNeuronBranch2, ArrayList<Double[]> tracedataNeuronColor2, ArrayList<Integer[][]> tracedataNeuronCoordinate2, ArrayList<String[]> tracedataNeuronType2, ArrayList<Integer[]> tracedataNeuronRadius2, ArrayList<Integer[]> tracedataNeuronSynapse2, ArrayList<String[]> tracedataNeuronConnection2, Integer imageSizeWidth1, Integer imageSizeHeight1, Integer regionsizeValue, String relativePositionString, Double colorToleranceValue, Integer positionTolerancePixelValue, Integer positionTolerancePointValue, Double positionToleranceRatioValue) {
+    public FindOverlappedTraceFirstMethod(List<String[]> tracedataNeuronBranch1, List<Double[]> tracedataNeuronColor1, List<Integer[][]> tracedataNeuronCoordinate1, List<String[]> tracedataNeuronType1, List<Integer[]> tracedataNeuronRadius1, List<Integer[]> tracedataNeuronSynapse1, List<String[]> tracedataNeuronConnection1, List<String[]> tracedataNeuronBranch2, List<Double[]> tracedataNeuronColor2, List<Integer[][]> tracedataNeuronCoordinate2, List<String[]> tracedataNeuronType2, List<Integer[]> tracedataNeuronRadius2, List<Integer[]> tracedataNeuronSynapse2, List<String[]> tracedataNeuronConnection2, Integer imageSizeWidth1, Integer imageSizeHeight1, Integer regionsizeValue, String relativePositionString, Double colorToleranceValue, Integer positionTolerancePixelValue, Integer positionTolerancePointValue, Double positionToleranceRatioValue) {
 
         ArrayList<String[]> tracedataNeuronBranchSelected1 = new ArrayList<String[]>();
         ArrayList<String[]> tracedataNeuronBranchSelected2 = new ArrayList<String[]>();
