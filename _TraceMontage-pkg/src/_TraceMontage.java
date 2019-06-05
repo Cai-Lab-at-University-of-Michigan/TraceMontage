@@ -127,73 +127,74 @@ public class _TraceMontage extends javax.swing.JFrame {
         positionTolerancePixelJTextField = new javax.swing.JTextField();
         positionTolerancePointJTextField = new javax.swing.JTextField();
         positionToleranceRatioJTextField = new javax.swing.JTextField();
-        montageJButton = new javax.swing.JButton();
-        cancelJButton = new javax.swing.JButton();
         montageMethod1JRadioButton = new javax.swing.JRadioButton();
         montageMethod2JRadioButton = new javax.swing.JRadioButton();
         montageMethod3JRadioButton = new javax.swing.JRadioButton();
+        criteriaJPanel1 = new javax.swing.JPanel();
+        montageJButton = new javax.swing.JButton();
+        cancelJButton = new javax.swing.JButton();
 
         montageJFileChooser.setAcceptAllFileFilterUsed(false);
-        montageJFileChooser.setCurrentDirectory(new java.io.File("C:\\Users\\asataryd\\Desktop"));
-        montageJFileChooser.setDialogTitle("Choose a zip/swc file ...");
         montageJFileChooser.setDialogType(javax.swing.JFileChooser.SAVE_DIALOG);
+        montageJFileChooser.setCurrentDirectory(new java.io.File("/home/loganaw/C:/Users/asataryd/Desktop"));
+        montageJFileChooser.setDialogTitle("Choose a zip/swc file ...");
         montageJFileChooser.setFileFilter(new CustomZipSWCFileFilter());
-        montageJFileChooser.setFont(new java.awt.Font("Arial", 0, 11));
+        montageJFileChooser.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         montageJFileChooser.getAccessibleContext().setAccessibleParent(this);
 
         filedata1JFileChooser.setAcceptAllFileFilterUsed(false);
-        filedata1JFileChooser.setCurrentDirectory(new java.io.File("C:\\Users\\asataryd\\Desktop"));
+        filedata1JFileChooser.setCurrentDirectory(new java.io.File("/home/loganaw/C:/Users/asataryd/Desktop"));
         filedata1JFileChooser.setDialogTitle("Choose a zip/swc file ...");
         filedata1JFileChooser.setFileFilter(new CustomZipSWCFileFilter());
-        filedata1JFileChooser.setFont(new java.awt.Font("Arial", 0, 11));
+        filedata1JFileChooser.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         filedata1JFileChooser.getAccessibleContext().setAccessibleParent(image1JPanel);
 
         fileimage1JFileChooser.setAcceptAllFileFilterUsed(false);
-        fileimage1JFileChooser.setCurrentDirectory(new java.io.File("C:\\Users\\asataryd\\Desktop"));
+        fileimage1JFileChooser.setCurrentDirectory(new java.io.File("/home/loganaw/C:/Users/asataryd/Desktop"));
         fileimage1JFileChooser.setDialogTitle("Choose a tif file ...");
         fileimage1JFileChooser.setFileFilter(new CustomTifFileFilter());
-        fileimage1JFileChooser.setFont(new java.awt.Font("Arial", 0, 11));
+        fileimage1JFileChooser.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         fileimage1JFileChooser.getAccessibleContext().setAccessibleParent(image1JPanel);
 
         filedata2JFileChooser.setAcceptAllFileFilterUsed(false);
-        filedata2JFileChooser.setCurrentDirectory(new java.io.File("C:\\Users\\asataryd\\Desktop"));
+        filedata2JFileChooser.setCurrentDirectory(new java.io.File("/home/loganaw/C:/Users/asataryd/Desktop"));
         filedata2JFileChooser.setDialogTitle("Choose a zip/swc file ...");
         filedata2JFileChooser.setFileFilter(new CustomZipSWCFileFilter());
-        filedata2JFileChooser.setFont(new java.awt.Font("Arial", 0, 11));
+        filedata2JFileChooser.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         filedata2JFileChooser.getAccessibleContext().setAccessibleParent(image2JPanel);
 
         fileimage2JFileChooser.setAcceptAllFileFilterUsed(false);
-        fileimage2JFileChooser.setCurrentDirectory(new java.io.File("C:\\Users\\asataryd\\Desktop"));
+        fileimage2JFileChooser.setCurrentDirectory(new java.io.File("/home/loganaw/C:/Users/asataryd/Desktop"));
         fileimage2JFileChooser.setDialogTitle("Choose a tif file ...");
         fileimage2JFileChooser.setFileFilter(new CustomTifFileFilter());
-        fileimage2JFileChooser.setFont(new java.awt.Font("Arial", 0, 11));
+        fileimage2JFileChooser.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         fileimage2JFileChooser.getAccessibleContext().setAccessibleParent(image2JPanel);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Trace Montage");
         setBounds(new java.awt.Rectangle(0, 0, 620, 670));
-        setFont(new java.awt.Font("Arial", 0, 11));
+        setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         setMaximizedBounds(new java.awt.Rectangle(0, 0, 620, 670));
         setMinimumSize(new java.awt.Dimension(620, 670));
         setName(""); // NOI18N
         setResizable(false);
 
         image1JPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true), "Image 1", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 11))); // NOI18N
-        image1JPanel.setFont(new java.awt.Font("Arial", 0, 11));
+        image1JPanel.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         image1JPanel.setMaximumSize(new java.awt.Dimension(295, 100));
         image1JPanel.setMinimumSize(new java.awt.Dimension(295, 100));
         image1JPanel.setPreferredSize(new java.awt.Dimension(295, 100));
 
-        filedata1JLabel.setFont(new java.awt.Font("Arial", 0, 11));
-        filedata1JLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        filedata1JLabel.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        filedata1JLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         filedata1JLabel.setText("Tracing Data-set :");
         filedata1JLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         filedata1JLabel.setMaximumSize(new java.awt.Dimension(62, 14));
         filedata1JLabel.setMinimumSize(new java.awt.Dimension(62, 14));
         filedata1JLabel.setPreferredSize(new java.awt.Dimension(62, 14));
 
-        fileimage1JLabel.setFont(new java.awt.Font("Arial", 0, 11));
-        fileimage1JLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        fileimage1JLabel.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        fileimage1JLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         fileimage1JLabel.setText("Image Stack :");
         fileimage1JLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         fileimage1JLabel.setMaximumSize(new java.awt.Dimension(62, 14));
@@ -209,7 +210,7 @@ public class _TraceMontage extends javax.swing.JFrame {
             }
         });
 
-        fileimage1JButton.setFont(new java.awt.Font("Arial", 0, 11));
+        fileimage1JButton.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         fileimage1JButton.setText("Browse...");
         fileimage1JButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         fileimage1JButton.addActionListener(new java.awt.event.ActionListener() {
@@ -219,7 +220,7 @@ public class _TraceMontage extends javax.swing.JFrame {
         });
 
         filedata1JTextField.setEditable(false);
-        filedata1JTextField.setFont(new java.awt.Font("Arial", 0, 11));
+        filedata1JTextField.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         filedata1JTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         filedata1JTextField.setText("*.zip/swc");
         filedata1JTextField.setMaximumSize(new java.awt.Dimension(100, 20));
@@ -227,7 +228,7 @@ public class _TraceMontage extends javax.swing.JFrame {
         filedata1JTextField.setPreferredSize(new java.awt.Dimension(100, 20));
 
         fileimage1JTextField.setEditable(false);
-        fileimage1JTextField.setFont(new java.awt.Font("Arial", 0, 11));
+        fileimage1JTextField.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         fileimage1JTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         fileimage1JTextField.setText("*.tif");
         fileimage1JTextField.setMaximumSize(new java.awt.Dimension(100, 20));
@@ -240,16 +241,19 @@ public class _TraceMontage extends javax.swing.JFrame {
             image1JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(image1JPanelLayout.createSequentialGroup()
                 .addGroup(image1JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(fileimage1JLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(filedata1JLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(image1JPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(fileimage1JLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE))
+                    .addComponent(filedata1JLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(image1JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(fileimage1JTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(filedata1JTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(image1JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(filedata1JTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
+                    .addComponent(fileimage1JTextField, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(image1JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(filedata1JButton)
-                    .addComponent(fileimage1JButton)))
+                    .addComponent(filedata1JButton, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(fileimage1JButton, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addContainerGap())
         );
         image1JPanelLayout.setVerticalGroup(
             image1JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -268,28 +272,28 @@ public class _TraceMontage extends javax.swing.JFrame {
         );
 
         image2JPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true), "Image 2", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 11))); // NOI18N
-        image2JPanel.setFont(new java.awt.Font("Arial", 0, 11));
+        image2JPanel.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         image2JPanel.setMaximumSize(new java.awt.Dimension(295, 100));
         image2JPanel.setMinimumSize(new java.awt.Dimension(295, 100));
         image2JPanel.setPreferredSize(new java.awt.Dimension(295, 100));
 
-        filedata2JLabel.setFont(new java.awt.Font("Arial", 0, 11));
-        filedata2JLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        filedata2JLabel.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        filedata2JLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         filedata2JLabel.setText("Tracing Data-set :");
         filedata2JLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         filedata2JLabel.setMaximumSize(new java.awt.Dimension(62, 14));
         filedata2JLabel.setMinimumSize(new java.awt.Dimension(62, 14));
         filedata2JLabel.setPreferredSize(new java.awt.Dimension(62, 14));
 
-        fileimage2JLabel.setFont(new java.awt.Font("Arial", 0, 11));
-        fileimage2JLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        fileimage2JLabel.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        fileimage2JLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         fileimage2JLabel.setText("Image Stack :");
         fileimage2JLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         fileimage2JLabel.setMaximumSize(new java.awt.Dimension(62, 14));
         fileimage2JLabel.setMinimumSize(new java.awt.Dimension(62, 14));
         fileimage2JLabel.setPreferredSize(new java.awt.Dimension(62, 14));
 
-        filedata2JButton.setFont(new java.awt.Font("Arial", 0, 11));
+        filedata2JButton.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         filedata2JButton.setText("Browse...");
         filedata2JButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         filedata2JButton.addActionListener(new java.awt.event.ActionListener() {
@@ -298,7 +302,7 @@ public class _TraceMontage extends javax.swing.JFrame {
             }
         });
 
-        fileimage2JButton.setFont(new java.awt.Font("Arial", 0, 11));
+        fileimage2JButton.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         fileimage2JButton.setText("Browse...");
         fileimage2JButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         fileimage2JButton.addActionListener(new java.awt.event.ActionListener() {
@@ -308,7 +312,7 @@ public class _TraceMontage extends javax.swing.JFrame {
         });
 
         filedata2JTextField.setEditable(false);
-        filedata2JTextField.setFont(new java.awt.Font("Arial", 0, 11));
+        filedata2JTextField.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         filedata2JTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         filedata2JTextField.setText("*.zip/swc");
         filedata2JTextField.setMaximumSize(new java.awt.Dimension(100, 20));
@@ -316,7 +320,7 @@ public class _TraceMontage extends javax.swing.JFrame {
         filedata2JTextField.setPreferredSize(new java.awt.Dimension(100, 20));
 
         fileimage2JTextField.setEditable(false);
-        fileimage2JTextField.setFont(new java.awt.Font("Arial", 0, 11));
+        fileimage2JTextField.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         fileimage2JTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         fileimage2JTextField.setText("*.tif");
         fileimage2JTextField.setMaximumSize(new java.awt.Dimension(100, 20));
@@ -328,17 +332,19 @@ public class _TraceMontage extends javax.swing.JFrame {
         image2JPanelLayout.setHorizontalGroup(
             image2JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(image2JPanelLayout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(image2JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(filedata2JLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(fileimage2JLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(filedata2JLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 106, Short.MAX_VALUE)
+                    .addComponent(fileimage2JLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(image2JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(filedata2JTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE)
+                    .addComponent(fileimage2JTextField, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(image2JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(filedata2JTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(fileimage2JTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(image2JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(filedata2JButton)
-                    .addComponent(fileimage2JButton)))
+                    .addComponent(filedata2JButton, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(fileimage2JButton, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addContainerGap())
         );
         image2JPanelLayout.setVerticalGroup(
             image2JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -348,7 +354,7 @@ public class _TraceMontage extends javax.swing.JFrame {
                     .addComponent(filedata2JButton)
                     .addComponent(filedata2JTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(filedata2JLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
                 .addGroup(image2JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(fileimage2JButton)
                     .addComponent(fileimage2JTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -357,17 +363,17 @@ public class _TraceMontage extends javax.swing.JFrame {
         );
 
         spatialJPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true), "Spatial Values", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 11))); // NOI18N
-        spatialJPanel.setFont(new java.awt.Font("Arial", 0, 11));
+        spatialJPanel.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         spatialJPanel.setMaximumSize(new java.awt.Dimension(600, 100));
         spatialJPanel.setMinimumSize(new java.awt.Dimension(600, 100));
         spatialJPanel.setPreferredSize(new java.awt.Dimension(600, 100));
 
-        regionsizeJLabel.setFont(new java.awt.Font("Arial", 0, 11));
+        regionsizeJLabel.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         regionsizeJLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         regionsizeJLabel.setText("Overlapped Region Size (pixel) :");
         regionsizeJLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        regionsizeJTextField.setFont(new java.awt.Font("Arial", 0, 11));
+        regionsizeJTextField.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         regionsizeJTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         regionsizeJTextField.setText("100");
         regionsizeJTextField.setMaximumSize(new java.awt.Dimension(30, 20));
@@ -379,12 +385,12 @@ public class _TraceMontage extends javax.swing.JFrame {
             }
         });
 
-        relativePositionJLabel.setFont(new java.awt.Font("Arial", 0, 11));
+        relativePositionJLabel.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         relativePositionJLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         relativePositionJLabel.setText("Relative Position of Image 2 to Image 1 :");
         relativePositionJLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        relativePositionJComboBox.setFont(new java.awt.Font("Arial", 0, 11));
+        relativePositionJComboBox.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         relativePositionJComboBox.setMaximumRowCount(2);
         relativePositionJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Right", "Bottom" }));
         relativePositionJComboBox.setMaximumSize(new java.awt.Dimension(70, 20));
@@ -400,53 +406,53 @@ public class _TraceMontage extends javax.swing.JFrame {
                 .addGroup(spatialJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(regionsizeJLabel)
                     .addComponent(relativePositionJLabel))
-                .addGap(100, 100, 100)
+                .addGap(22, 22, 22)
                 .addGroup(spatialJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(regionsizeJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(relativePositionJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(178, 178, 178))
+                    .addComponent(relativePositionJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(regionsizeJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         spatialJPanelLayout.setVerticalGroup(
             spatialJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(spatialJPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(spatialJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                .addGroup(spatialJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(regionsizeJLabel)
                     .addComponent(regionsizeJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(spatialJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                .addGroup(spatialJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(relativePositionJLabel)
                     .addComponent(relativePositionJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(13, 13, 13))
+                .addGap(15, 15, 15))
         );
 
         criteriaJPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true), "Merging Criteria", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 11))); // NOI18N
-        criteriaJPanel.setFont(new java.awt.Font("Arial", 0, 11));
+        criteriaJPanel.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         criteriaJPanel.setMaximumSize(new java.awt.Dimension(600, 250));
         criteriaJPanel.setMinimumSize(new java.awt.Dimension(600, 250));
         criteriaJPanel.setPreferredSize(new java.awt.Dimension(600, 250));
 
-        colorToleranceJLabel.setFont(new java.awt.Font("Arial", 0, 11));
+        colorToleranceJLabel.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         colorToleranceJLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         colorToleranceJLabel.setText("Maximum tolerance for relative difference of intensities between each corresponding pair of channels (0-1) :");
         colorToleranceJLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        positionTolerancePixelJLabel.setFont(new java.awt.Font("Arial", 0, 11));
+        positionTolerancePixelJLabel.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         positionTolerancePixelJLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         positionTolerancePixelJLabel.setText("Maximum distance between each pair of the nearest points (pixel) :");
         positionTolerancePixelJLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        positionTolerancePointJLabel.setFont(new java.awt.Font("Arial", 0, 11));
+        positionTolerancePointJLabel.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         positionTolerancePointJLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         positionTolerancePointJLabel.setText("Minimum number of the pairs of the nearest points based on the above criterion :");
         positionTolerancePointJLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        positionToleranceRatioJLabel.setFont(new java.awt.Font("Arial", 0, 11));
+        positionToleranceRatioJLabel.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         positionToleranceRatioJLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         positionToleranceRatioJLabel.setText("Minimum ratio of the overlapped length to the whole length of both overlapped branches (0-1) :");
         positionToleranceRatioJLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        colorToleranceJTextField.setFont(new java.awt.Font("Arial", 0, 11));
+        colorToleranceJTextField.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         colorToleranceJTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         colorToleranceJTextField.setText("0.3");
         colorToleranceJTextField.setMaximumSize(new java.awt.Dimension(30, 20));
@@ -458,7 +464,7 @@ public class _TraceMontage extends javax.swing.JFrame {
             }
         });
 
-        positionTolerancePixelJTextField.setFont(new java.awt.Font("Arial", 0, 11));
+        positionTolerancePixelJTextField.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         positionTolerancePixelJTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         positionTolerancePixelJTextField.setText("5");
         positionTolerancePixelJTextField.setMaximumSize(new java.awt.Dimension(30, 20));
@@ -470,7 +476,7 @@ public class _TraceMontage extends javax.swing.JFrame {
             }
         });
 
-        positionTolerancePointJTextField.setFont(new java.awt.Font("Arial", 0, 11));
+        positionTolerancePointJTextField.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         positionTolerancePointJTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         positionTolerancePointJTextField.setText("50");
         positionTolerancePointJTextField.setMaximumSize(new java.awt.Dimension(30, 20));
@@ -482,7 +488,7 @@ public class _TraceMontage extends javax.swing.JFrame {
             }
         });
 
-        positionToleranceRatioJTextField.setFont(new java.awt.Font("Arial", 0, 11));
+        positionToleranceRatioJTextField.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         positionToleranceRatioJTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         positionToleranceRatioJTextField.setText("0.8");
         positionToleranceRatioJTextField.setMaximumSize(new java.awt.Dimension(30, 20));
@@ -501,23 +507,17 @@ public class _TraceMontage extends javax.swing.JFrame {
             .addGroup(criteriaJPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(criteriaJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(criteriaJPanelLayout.createSequentialGroup()
-                        .addComponent(colorToleranceJLabel)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
-                        .addComponent(colorToleranceJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(criteriaJPanelLayout.createSequentialGroup()
-                        .addComponent(positionTolerancePixelJLabel)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 216, Short.MAX_VALUE)
-                        .addComponent(positionTolerancePixelJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(criteriaJPanelLayout.createSequentialGroup()
-                        .addComponent(positionTolerancePointJLabel)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 153, Short.MAX_VALUE)
-                        .addComponent(positionTolerancePointJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(criteriaJPanelLayout.createSequentialGroup()
-                        .addComponent(positionToleranceRatioJLabel)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
-                        .addComponent(positionToleranceRatioJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                    .addComponent(colorToleranceJLabel)
+                    .addComponent(positionTolerancePixelJLabel)
+                    .addComponent(positionTolerancePointJLabel)
+                    .addComponent(positionToleranceRatioJLabel))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(criteriaJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(colorToleranceJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
+                    .addComponent(positionTolerancePixelJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(positionTolerancePointJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(positionToleranceRatioJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         criteriaJPanelLayout.setVerticalGroup(
             criteriaJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -541,32 +541,8 @@ public class _TraceMontage extends javax.swing.JFrame {
                 .addGap(25, 25, 25))
         );
 
-        montageJButton.setFont(new java.awt.Font("Arial", 0, 11));
-        montageJButton.setText("Montage");
-        montageJButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        montageJButton.setMaximumSize(new java.awt.Dimension(75, 23));
-        montageJButton.setMinimumSize(new java.awt.Dimension(75, 23));
-        montageJButton.setPreferredSize(new java.awt.Dimension(75, 23));
-        montageJButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                montageJButtonActionPerformed(evt);
-            }
-        });
-
-        cancelJButton.setFont(new java.awt.Font("Arial", 0, 11));
-        cancelJButton.setText("Cancel");
-        cancelJButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        cancelJButton.setMaximumSize(new java.awt.Dimension(75, 23));
-        cancelJButton.setMinimumSize(new java.awt.Dimension(75, 23));
-        cancelJButton.setPreferredSize(new java.awt.Dimension(75, 23));
-        cancelJButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cancelJButtonActionPerformed(evt);
-            }
-        });
-
         montageMethodButtonGroup.add(montageMethod1JRadioButton);
-        montageMethod1JRadioButton.setFont(new java.awt.Font("Arial", 0, 11));
+        montageMethod1JRadioButton.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         montageMethod1JRadioButton.setSelected(true);
         montageMethod1JRadioButton.setActionCommand("Use Montage as a mean of merging the two sets of traces of two adjacent images.");
         montageMethod1JRadioButton.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -578,7 +554,7 @@ public class _TraceMontage extends javax.swing.JFrame {
         });
 
         montageMethodButtonGroup.add(montageMethod2JRadioButton);
-        montageMethod2JRadioButton.setFont(new java.awt.Font("Arial", 0, 11));
+        montageMethod2JRadioButton.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         montageMethod2JRadioButton.setText("Use Montage as a mean of merging the two sets of traces of one image.");
         montageMethod2JRadioButton.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         montageMethod2JRadioButton.addActionListener(new java.awt.event.ActionListener() {
@@ -588,7 +564,7 @@ public class _TraceMontage extends javax.swing.JFrame {
         });
 
         montageMethodButtonGroup.add(montageMethod3JRadioButton);
-        montageMethod3JRadioButton.setFont(new java.awt.Font("Arial", 0, 11));
+        montageMethod3JRadioButton.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         montageMethod3JRadioButton.setText("Use Montage as a mean of removing the redundant traces of one image.");
         montageMethod3JRadioButton.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         montageMethod3JRadioButton.addActionListener(new java.awt.event.ActionListener() {
@@ -597,56 +573,103 @@ public class _TraceMontage extends javax.swing.JFrame {
             }
         });
 
+        criteriaJPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true), "Start Program", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 11)));
+        criteriaJPanel1.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        criteriaJPanel1.setMaximumSize(new java.awt.Dimension(600, 250));
+        criteriaJPanel1.setMinimumSize(new java.awt.Dimension(600, 250));
+
+        montageJButton.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        montageJButton.setText("Montage");
+        montageJButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        montageJButton.setMaximumSize(new java.awt.Dimension(75, 23));
+        montageJButton.setMinimumSize(new java.awt.Dimension(75, 23));
+        montageJButton.setPreferredSize(new java.awt.Dimension(75, 23));
+        montageJButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                montageJButtonActionPerformed(evt);
+            }
+        });
+
+        cancelJButton.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        cancelJButton.setText("Cancel");
+        cancelJButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        cancelJButton.setMaximumSize(new java.awt.Dimension(75, 23));
+        cancelJButton.setMinimumSize(new java.awt.Dimension(75, 23));
+        cancelJButton.setPreferredSize(new java.awt.Dimension(75, 23));
+        cancelJButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cancelJButtonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout criteriaJPanel1Layout = new javax.swing.GroupLayout(criteriaJPanel1);
+        criteriaJPanel1.setLayout(criteriaJPanel1Layout);
+        criteriaJPanel1Layout.setHorizontalGroup(
+            criteriaJPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(criteriaJPanel1Layout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addGroup(criteriaJPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(montageJButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(cancelJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        criteriaJPanel1Layout.setVerticalGroup(
+            criteriaJPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(criteriaJPanel1Layout.createSequentialGroup()
+                .addComponent(montageJButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(cancelJButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                            .addComponent(image1JPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(image2JPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(10, 10, 10)
-                            .addComponent(spatialJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(criteriaJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(montageMethod1JRadioButton)
-                                    .addComponent(montageMethod2JRadioButton)
-                                    .addComponent(montageMethod3JRadioButton)))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(189, 189, 189)
-                        .addComponent(montageJButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(96, 96, 96)
-                        .addComponent(cancelJButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(6, 6, 6)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(montageMethod3JRadioButton)
+                            .addComponent(montageMethod1JRadioButton)
+                            .addComponent(montageMethod2JRadioButton))
+                        .addGap(18, 18, 18)
+                        .addComponent(criteriaJPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(spatialJPanel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 700, Short.MAX_VALUE)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(image1JPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 348, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(image2JPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 346, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(criteriaJPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 700, Short.MAX_VALUE)))
+                .addGap(0, 10, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(image2JPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(image1JPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(spatialJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(3, 3, 3)
                 .addComponent(criteriaJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(montageMethod1JRadioButton)
-                .addGap(18, 18, 18)
-                .addComponent(montageMethod2JRadioButton)
-                .addGap(18, 18, 18)
-                .addComponent(montageMethod3JRadioButton)
-                .addGap(15, 15, 15)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(cancelJButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(montageJButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(montageMethod1JRadioButton)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(montageMethod2JRadioButton)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(montageMethod3JRadioButton))
+                    .addComponent(criteriaJPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(8, Short.MAX_VALUE))
         );
+
+        criteriaJPanel1.getAccessibleContext().setAccessibleName("");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -1247,6 +1270,7 @@ public class _TraceMontage extends javax.swing.JFrame {
     private javax.swing.JLabel colorToleranceJLabel;
     private javax.swing.JTextField colorToleranceJTextField;
     private javax.swing.JPanel criteriaJPanel;
+    private javax.swing.JPanel criteriaJPanel1;
     private javax.swing.JButton filedata1JButton;
     private javax.swing.JFileChooser filedata1JFileChooser;
     private javax.swing.JLabel filedata1JLabel;
