@@ -23,7 +23,6 @@ public class ReadTraceImageFile {
     private boolean traceimageFlag;
 
     public ReadTraceImageFile(ImagePlus image, List<String[]> tracedataNeuronBranch, List<Integer[][]> tracedataNeuronCoordinate) {
-
         try {
             int[] imageDimension = image.getDimensions();
             ImageStack imageStackNeuronColor = image.getStack();
@@ -64,7 +63,7 @@ public class ReadTraceImageFile {
             image.close();            
         } catch (Exception e) {
             traceimageFlag = false;
-            System.out.println(e.getMessage());
+            System.out.println( e.getMessage() );
         }
     }
 

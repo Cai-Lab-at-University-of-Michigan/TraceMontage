@@ -179,7 +179,7 @@ public class _TraceMontage extends javax.swing.JFrame {
         setName(""); // NOI18N
         setResizable(false);
 
-        image1JPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true), "Image 1", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 11))); // NOI18N
+        image1JPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true), "Image 1 (Target)", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 11))); // NOI18N
         image1JPanel.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         image1JPanel.setMaximumSize(new java.awt.Dimension(295, 100));
         image1JPanel.setMinimumSize(new java.awt.Dimension(295, 100));
@@ -271,7 +271,7 @@ public class _TraceMontage extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        image2JPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true), "Image 2", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 11))); // NOI18N
+        image2JPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true), "Image 2 (Source)", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 11))); // NOI18N
         image2JPanel.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         image2JPanel.setMaximumSize(new java.awt.Dimension(295, 100));
         image2JPanel.setMinimumSize(new java.awt.Dimension(295, 100));
@@ -669,6 +669,7 @@ public class _TraceMontage extends javax.swing.JFrame {
                 .addContainerGap(8, Short.MAX_VALUE))
         );
 
+        image1JPanel.getAccessibleContext().setAccessibleName("Image 1 (Source)");
         criteriaJPanel1.getAccessibleContext().setAccessibleName("");
 
         pack();
