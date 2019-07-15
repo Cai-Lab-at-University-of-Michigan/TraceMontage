@@ -7,9 +7,9 @@
         <group>
             <file>file:/home/loganaw/TraceMontage/_TraceMontage-pkg/src/ReadTraceDataFile.java</file>
             <file>file:/home/loganaw/TraceMontage/_TraceMontage-pkg/src/ReadTraceImageFile.java</file>
-            <file>file:/home/loganaw/TraceMontage/_TraceMontage-pkg/src/IntegerCoordinateLine.java</file>
             <file>file:/home/loganaw/TraceMontage/_TraceMontage-pkg/src/WriteTraceDataFile.java</file>
             <file>file:/home/loganaw/TraceMontage/_TraceMontage-pkg/src/FindOverlappedTraceOtherMethods.java</file>
+            <file>file:/home/loganaw/TraceMontage/_TraceMontage-pkg/src/ModifyBranchAllProperties.java</file>
         </group>
     </open-files>
 </project-private>

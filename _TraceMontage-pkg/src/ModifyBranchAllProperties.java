@@ -46,10 +46,13 @@ public class ModifyBranchAllProperties {
             IntegerCoordinateLine integerCoordinateLineInstance = new IntegerCoordinateLine(coordinateBranch1[indexEnd1], coordinateBranch2[indexEnd2]);
             Integer[][] coordinateSegment = integerCoordinateLineInstance.getIntegerCoordinateLine();
 
-            String[] typeSegment = new String[coordinateSegment.length - 2];
-            Integer[] radiusSegment = new Integer[coordinateSegment.length - 2];
-            Integer[] synapseSegment = new Integer[coordinateSegment.length - 2];
-            String[] connectionSegment = new String[coordinateSegment.length - 2];
+            int coordinateSegmentSize = coordinateSegment.length - 2;
+            if( coordinateSegmentSize < 0 ) coordinateSegmentSize = 0;
+            
+            String[] typeSegment = new String[coordinateSegmentSize];
+            Integer[] radiusSegment = new Integer[coordinateSegmentSize];
+            Integer[] synapseSegment = new Integer[coordinateSegmentSize];
+            String[] connectionSegment = new String[coordinateSegmentSize];
 
             for (int i = 0; i < coordinateSegment.length - 2; i++) {
                 typeSegment[i] = typeBranch1[0].split(":")[0];
