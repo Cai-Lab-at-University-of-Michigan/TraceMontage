@@ -883,7 +883,6 @@ public class _TraceMontage extends javax.swing.JFrame {
     }//GEN-LAST:event_fileimage2JButtonActionPerformed
 
     private void montageJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_montageJButtonActionPerformed
-        // TODO add your handling code here:
         if (montageMethodFlag == 1) {
 
             String regionsizeString = regionsizeJTextField.getText();
@@ -1082,15 +1081,15 @@ public class _TraceMontage extends javax.swing.JFrame {
                 }
             }
         }
+        
+        //System.out.println("End of Action!");
     }//GEN-LAST:event_montageJButtonActionPerformed
 
     private void cancelJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelJButtonActionPerformed
-        // TODO add your handling code here:
         this.setVisible(false);
     }//GEN-LAST:event_cancelJButtonActionPerformed
 
     private void regionsizeJTextFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_regionsizeJTextFieldFocusLost
-        // TODO add your handling code here:
         String regionsizeString = regionsizeJTextField.getText();
 
         try {
@@ -1107,7 +1106,6 @@ public class _TraceMontage extends javax.swing.JFrame {
     }//GEN-LAST:event_regionsizeJTextFieldFocusLost
 
     private void colorToleranceJTextFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_colorToleranceJTextFieldFocusLost
-        // TODO add your handling code here:
         String colorToleranceString = colorToleranceJTextField.getText();
 
         try {
@@ -1124,7 +1122,6 @@ public class _TraceMontage extends javax.swing.JFrame {
     }//GEN-LAST:event_colorToleranceJTextFieldFocusLost
 
     private void positionTolerancePixelJTextFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_positionTolerancePixelJTextFieldFocusLost
-        // TODO add your handling code here:
          String positionTolerancePixelString = positionTolerancePixelJTextField.getText();
 
          try {
@@ -1141,7 +1138,6 @@ public class _TraceMontage extends javax.swing.JFrame {
     }//GEN-LAST:event_positionTolerancePixelJTextFieldFocusLost
 
     private void positionTolerancePointJTextFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_positionTolerancePointJTextFieldFocusLost
-        // TODO add your handling code here:
         String positionTolerancePointString = positionTolerancePointJTextField.getText();
 
         try {
@@ -1158,7 +1154,6 @@ public class _TraceMontage extends javax.swing.JFrame {
     }//GEN-LAST:event_positionTolerancePointJTextFieldFocusLost
 
     private void positionToleranceRatioJTextFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_positionToleranceRatioJTextFieldFocusLost
-        // TODO add your handling code here:
         String positionToleranceRatioString = positionToleranceRatioJTextField.getText();
 
         try {
@@ -1175,7 +1170,6 @@ public class _TraceMontage extends javax.swing.JFrame {
     }//GEN-LAST:event_positionToleranceRatioJTextFieldFocusLost
 
     private void montageMethod1JRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_montageMethod1JRadioButtonActionPerformed
-        // TODO add your handling code here:
         montageMethodFlag = 1;
 
         image2JPanel.setEnabled(true);
@@ -1194,7 +1188,6 @@ public class _TraceMontage extends javax.swing.JFrame {
     }//GEN-LAST:event_montageMethod1JRadioButtonActionPerformed
 
     private void montageMethod2JRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_montageMethod2JRadioButtonActionPerformed
-        // TODO add your handling code here:
         montageMethodFlag = 2;
 
         image2JPanel.setEnabled(true);

@@ -74,10 +74,10 @@ java.awt.event.ActionListener
 java.lang.Object
 java.util.ArrayList
 [Ljava.lang.Integer;
+java.lang.Double
 java.lang.Math
-java.lang.System
-java.util.List
 IntegerCoordinateLine
+[[Ljava.lang.Integer;
 java.lang.Integer
 ||:_TraceMontage$3
 java.lang.Object
